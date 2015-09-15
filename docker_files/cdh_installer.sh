@@ -45,7 +45,7 @@ sudo -u hdfs hdfs dfs -chown hbase /hbase
 
 #CDH5-Installation-Guide Install HBase
 echo "Install Cloudera Components"
-DEBIAN_FRONTEND=noninteractive apt-get -y install hive hbase hbase-thrift hbase-master pig hue oozie oozie-client spark-core spark-master spark-worker spark-history-server spark-python
+DEBIAN_FRONTEND=noninteractive apt-get -y install hive hbase hive-server2 hbase-thrift hbase-master pig hue oozie oozie-client spark-core spark-master spark-worker spark-history-server spark-python
 
 #Configure Oozie
 update-alternatives --set oozie-tomcat-conf /etc/oozie/tomcat-conf.http
