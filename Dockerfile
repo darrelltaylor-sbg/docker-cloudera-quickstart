@@ -23,20 +23,6 @@ RUN \
     chmod +x /usr/bin/cdh_startup_script.sh && \
     bash /tmp/cdh_installer.sh
 
-# private and public mapping
-EXPOSE 8020:8020
-EXPOSE 8888:8888
-EXPOSE 11000:11000
-EXPOSE 11443:11443
-EXPOSE 9090:9090
-EXPOSE 8088:8088
-EXPOSE 19888:19888
-EXPOSE 50070:50070
-EXPOSE 50075:50075
-EXPOSE 50090:50090
-
-# private only
-#EXPOSE 80
 
 # Define default command.
 #CMD ["/usr/bin/cdh_startup_script.sh && bash"]
